@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HelpViewController">
+            <connections>
+                <outlet property="donateItemsButton" destination="u1V-q5-nAL" id="NWa-d4-RiE"/>
+                <outlet property="donateMoneyButton" destination="iio-Yo-rfF" id="ka7-9e-pBU"/>
+                <outlet property="psuedoFosterButton" destination="1jG-Tj-ugD" id="Jmb-Pg-SDj"/>
+                <outlet property="successStoriesButton" destination="7E4-Xh-oMQ" id="Q9X-6k-c1S"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="volunteerButton" destination="IHv-vA-XJ9" id="8B4-qY-yeG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0h-bI-R1f">
+                    <rect key="frame" x="0.0" y="21" width="320" height="44"/>
+                    <color key="barTintColor" red="0.51764705879999995" green="0.57647058819999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <navigationItem title="Menu" id="dKc-uT-dg6">
+                            <barButtonItem key="leftBarButtonItem" title="Back" id="47c-pm-3Pw">
+                                <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="back:" destination="-1" id="iUe-FD-WHY"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                    <connections>
+                        <outlet property="delegate" destination="dKc-uT-dg6" id="34c-ar-mJg"/>
+                    </connections>
+                </navigationBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1V-q5-nAL">
+                    <rect key="frame" x="52" y="172" width="216" height="30"/>
+                    <color key="backgroundColor" red="0.51764705879999995" green="0.57647058819999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="216" id="QjK-cM-EcO"/>
+                        <constraint firstAttribute="height" constant="30" id="kxb-Jr-t7i"/>
+                    </constraints>
+                    <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Donate Pet Related Items">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="donateItems:" destination="-1" eventType="touchUpInside" id="x5d-C3-1DZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jG-Tj-ugD">
+                    <rect key="frame" x="52" y="210" width="216" height="30"/>
+                    <color key="backgroundColor" red="0.51764705879999995" green="0.57647058819999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="XZj-5C-wf8"/>
+                        <constraint firstAttribute="width" constant="216" id="d3u-rs-VNo"/>
+                    </constraints>
+                    <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Furless Fostering">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="foster:" destination="-1" eventType="touchUpInside" id="vji-HS-FWz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHv-vA-XJ9">
+                    <rect key="frame" x="52" y="248" width="216" height="30"/>
+                    <color key="backgroundColor" red="0.51764705879999995" green="0.57647058819999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="216" id="VAa-6H-IoO"/>
+                        <constraint firstAttribute="height" constant="30" id="eRg-8b-nWk"/>
+                    </constraints>
+                    <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Volunteer">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="volunteer:" destination="-1" eventType="touchUpInside" id="Ddx-MF-ljV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7E4-Xh-oMQ">
+                    <rect key="frame" x="52" y="286" width="216" height="30"/>
+                    <color key="backgroundColor" red="0.51764705879999995" green="0.57647058819999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="216" id="svf-PD-efV"/>
+                        <constraint firstAttribute="height" constant="30" id="z7x-88-aSA"/>
+                    </constraints>
+                    <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="View Success Stories">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sucessStories:" destination="-1" eventType="touchUpInside" id="zHj-ry-nG6"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paw.png" translatesAutoresizingMaskIntoConstraints="NO" id="bau-FM-orm">
+                    <rect key="frame" x="40" y="324" width="240" height="236"/>
+                    <color key="tintColor" red="0.51764705879999995" green="0.57647058819999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bau-FM-orm" secondAttribute="height" multiplier="60:59" id="M6G-DW-kdb"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iio-Yo-rfF">
+                    <rect key="frame" x="52" y="134" width="216" height="30"/>
+                    <color key="backgroundColor" red="0.51764705879999995" green="0.57647058819999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="216" id="0tM-u4-p9u"/>
+                        <constraint firstAttribute="height" constant="30" id="dwu-q8-eBg"/>
+                    </constraints>
+                    <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Donate Money">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="donateMoney:" destination="-1" eventType="touchUpInside" id="iWx-M4-x9W"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donate to Stillwater Animal Welfare" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hui-Hz-Xqf">
+                    <rect key="frame" x="8" y="71" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="MgY-kq-Tjw"/>
+                        <constraint firstAttribute="width" constant="304" id="Ne7-7v-JRs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advisory Committee Fiscal Sponsorship" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1od-Bt-kbK">
+                    <rect key="frame" x="8" y="100" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="304" id="avj-QO-4CF"/>
+                        <constraint firstAttribute="height" constant="21" id="nwp-F1-Ar4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="IHv-vA-XJ9" secondAttribute="centerX" id="1VZ-Zt-vid"/>
+                <constraint firstItem="7E4-Xh-oMQ" firstAttribute="top" secondItem="IHv-vA-XJ9" secondAttribute="bottom" constant="8" id="1eX-D6-ee4"/>
+                <constraint firstAttribute="centerX" secondItem="7E4-Xh-oMQ" secondAttribute="centerX" id="2Mp-Nr-7xi"/>
+                <constraint firstAttribute="centerX" secondItem="1jG-Tj-ugD" secondAttribute="centerX" id="31q-Sw-jye"/>
+                <constraint firstAttribute="centerX" secondItem="iio-Yo-rfF" secondAttribute="centerX" id="3IO-Ki-Bxc"/>
+                <constraint firstItem="hui-Hz-Xqf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EHN-Zp-QwN"/>
+                <constraint firstItem="bau-FM-orm" firstAttribute="top" secondItem="7E4-Xh-oMQ" secondAttribute="bottom" constant="8" id="OEB-vT-RTY"/>
+                <constraint firstItem="1od-Bt-kbK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RYD-zN-Lnm"/>
+                <constraint firstItem="T0h-bI-R1f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XUh-uk-jIR"/>
+                <constraint firstAttribute="centerX" secondItem="u1V-q5-nAL" secondAttribute="centerX" id="dft-Dn-u5j"/>
+                <constraint firstAttribute="trailing" secondItem="T0h-bI-R1f" secondAttribute="trailing" id="dh8-dV-cwI"/>
+                <constraint firstItem="IHv-vA-XJ9" firstAttribute="top" secondItem="1jG-Tj-ugD" secondAttribute="bottom" constant="8" id="gPd-tM-9gP"/>
+                <constraint firstItem="u1V-q5-nAL" firstAttribute="top" secondItem="iio-Yo-rfF" secondAttribute="bottom" constant="8" id="gck-kT-vtY"/>
+                <constraint firstAttribute="centerX" secondItem="bau-FM-orm" secondAttribute="centerX" id="gdl-yr-BiB"/>
+                <constraint firstItem="hui-Hz-Xqf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="71" id="j1Y-3m-Dih"/>
+                <constraint firstItem="T0h-bI-R1f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="21" id="md3-Fp-vWi"/>
+                <constraint firstItem="iio-Yo-rfF" firstAttribute="top" secondItem="1od-Bt-kbK" secondAttribute="bottom" constant="13" id="nT9-TH-IY1"/>
+                <constraint firstItem="1jG-Tj-ugD" firstAttribute="top" secondItem="u1V-q5-nAL" secondAttribute="bottom" constant="8" id="nVs-b7-nIB"/>
+                <constraint firstAttribute="bottom" secondItem="bau-FM-orm" secondAttribute="bottom" constant="8" id="whS-Q2-EUn"/>
+                <constraint firstItem="1od-Bt-kbK" firstAttribute="top" secondItem="hui-Hz-Xqf" secondAttribute="bottom" constant="8" id="zPh-TK-Qbv"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="paw.png" width="458" height="463"/>
+    </resources>
+</document>
